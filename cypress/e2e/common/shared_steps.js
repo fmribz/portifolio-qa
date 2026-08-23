@@ -15,3 +15,7 @@ When("clico no botão {string}", (nomeDoBotao) => {
 Then("devo ver a mensagem de sucesso {string}", (mensagem) => {
   cy.contains(mensagem).should('be.visible');
 });
+
+Then("devo ver a mensagem de erro {string}", (mensagem) => {
+  cy.contains(mensagem).should('be.visible');
+});
