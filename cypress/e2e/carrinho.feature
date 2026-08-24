@@ -2,7 +2,7 @@
 Funcionalidade: Carrinho de Compras
 
 Contexto:
-    Dado que realizo o login no sistema\
+    Dado que realizo o login no sistema
 
 Cenário: Adicionar produto ao carrinho com sucesso
     Quando clico no botão "add-to-cart-sauce-labs-backpack"
