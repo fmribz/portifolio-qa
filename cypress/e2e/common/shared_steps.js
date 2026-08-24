@@ -5,7 +5,9 @@ Given("que estou na tela de login", () => {
 });
 
 When("preencho o campo {string} com {string}", (nomeDoCampo, valorDoTexto) => {
-    cy.get(`[data-test="${nomeDoCampo}"]`).type(valorDoTexto);
+    if(valorDoTexto !== ""){
+      cy.get(`[data-test="${nomeDoCampo}"]`).type(valorDoTexto);
+    }
 });
 
 When("clico no botão {string}", (nomeDoBotao) => {

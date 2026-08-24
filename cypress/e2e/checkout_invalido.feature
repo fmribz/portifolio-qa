@@ -10,6 +10,16 @@ Contexto:
     E clico no botão "shopping-cart-link"
     E clico no botão "checkout"
 
-Cenário: Tentar finalizar a compra com todos os dados em branco
-    Quando clico no botão "continue"
-    Então devo ver a mensagem de erro "Error: First Name is required"
+Esquema do Cenário: Tentar finalizar a compra com campos obrigatórios em branco
+    Quando preencho o campo "firstName" com "<primeiro_nome>"
+    E preencho o campo "lastName" com "<sobrenome>"
+    E preencho o campo "postalCode" com "<cep>"
+    E clico no botão "continue"
+    Então devo ver a mensagem de erro "<mensagem_erro>"
+
+    Exemplos:
+        |primeiro_nome|sobrenome|cep     |mensagem_erro                 |
+        |             |QA       |14000000|Error: First Name is required |
+        |Fábio        |         |14000000|Error: Last Name is required  |
+        |Fábio        |QA       |        |Error: Postal Code is required|
+        |             |         |        |Error: First Name is required |
