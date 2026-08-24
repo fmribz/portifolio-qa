@@ -1,5 +1,9 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
+Given("que realizo o login no sistema", () => {
+  cy.login();
+});
+
 Given("que estou na tela de login", () => {
   cy.visit("https://www.saucedemo.com/");
 });
