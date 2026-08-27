@@ -16,7 +16,7 @@ Esquema do Cenário: Tentar finalizar a compra com campos obrigatórios em branc
 
     Exemplos:
         |primeiro_nome|sobrenome|cep     |mensagem_erro                 |
-        |             |QA       |14000000|Error: First Name is required |
+        |             |QA       |14000000|Error: Cadê o nome do usuário?|
         |Fábio        |         |14000000|Error: Last Name is required  |
         |Fábio        |QA       |        |Error: Postal Code is required|
         |             |         |        |Error: First Name is required |
