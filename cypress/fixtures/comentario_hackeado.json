@@ -1,0 +1,5 @@
+{
+    "name": "Fábio",
+    "email": "fabio.qa@intercept.com",
+    "body": "Sucesso absoluto! O Cypress interceptou a chamada de rede, bloqueou o servidor real e injetou essa mensagem diretamente no Front-End."
+}
